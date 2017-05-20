@@ -1,10 +1,22 @@
-def isphonenumber(text):#415-555-
-    if len(text) !=12:
+def numcheck(text):  #415-555-
+    if len(text) != 12:
         return False #not proper size
-    for I in range(0,3):
-        if not text[I].isdecimal():
-            return False#no dash
-    for I in range (4,7):
-        if not text[I].isdecimal():
+    for i in range(0, 3):
+        if not text[i].isdecimal():
+            return False#no area code
+    if text[3] != '-':
+        return False #no dash
+    for i in range(4, 7):
+        if not text[i].isdecimal():
             return False #no first 3 digits
+    if text[7] != '-':
+        return False #no second dash
+    for i in range(8, 12):
+        if not text[i].isdecimal():
+            return False #missing last 4 digits
+    return True
+
+    print(numcheck('45636'))
+
+
     
