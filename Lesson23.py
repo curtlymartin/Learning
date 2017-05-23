@@ -1,4 +1,4 @@
-def numcheck(text):  #415-555-
+def isnumcheck(text):  #415-555-
     if len(text) != 12:
         return False #not proper size
     for i in range(0, 3):
@@ -16,7 +16,7 @@ def numcheck(text):  #415-555-
             return False #missing last 4 digits
     return True
 
-    print(numcheck('45636'))
+print(isnumcheck('415-555-5554'))
 
 
     

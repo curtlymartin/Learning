@@ -11,6 +11,16 @@
             "secret": "my_secret",
             "host": "localhost"
         },
+        {
+            "name": "Attach (Remote Debug)",
+            "type": "python",
+            "request": "attach",
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": "${workspaceRoot}",
+            "port": 3000,
+            "secret": "my_secret",
+            "host": "localhost"
+        },
     {
         "name": "Attach (Remote Debug)",
         "type": "python",
