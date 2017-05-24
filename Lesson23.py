@@ -17,6 +17,3 @@ def isnumcheck(text):  #415-555-
     return True
 
 print(isnumcheck('415-555-5554'))
-
-
-    
